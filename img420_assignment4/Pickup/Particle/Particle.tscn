@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cth8ft4kh8nbv"]
+
+[ext_resource type="Texture2D" uid="uid://bsogebrysbe8g" path="res://Pickup/Particle/particle.png" id="1_224au"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_siurh"]
+particle_flag_disable_z = true
+velocity_pivot = Vector3(1, 1, 1)
+direction = Vector3(1, 1, 1)
+spread = 0.0
+angular_velocity_min = -628.97
+angular_velocity_max = -579.31
+orbit_velocity_min = -1.012
+orbit_velocity_max = 0.851
+radial_velocity_min = -310.34
+radial_velocity_max = 379.31
+gravity = Vector3(0, 0, 0)
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+texture = ExtResource("1_224au")
+speed_scale = 0.5
+process_material = SubResource("ParticleProcessMaterial_siurh")

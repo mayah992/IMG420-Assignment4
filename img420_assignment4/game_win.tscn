@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://pvlugr4n7ue2"]
+
+[ext_resource type="Texture2D" uid="uid://bh8u83fshk06t" path="res://Background/ufo-788746_1920.jpg" id="1_1f66h"]
+[ext_resource type="Script" uid="uid://l313c5668lr5" path="res://GameWin.cs" id="1_fctd2"]
+
+[node name="game_win" type="Node2D"]
+script = ExtResource("1_fctd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(163.111, 92)
+scale = Vector2(0.17037, 0.17037)
+texture = ExtResource("1_1f66h")
+
+[node name="menu" type="Button" parent="."]
+offset_left = 77.0
+offset_top = 90.0
+offset_right = 250.0
+offset_bottom = 121.0
+text = "Return to Main Menu
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 44.0
+offset_top = 4.0
+offset_right = 285.0
+offset_bottom = 53.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "CONGRATS, 
+YOU ESCAPED THE ASTRONAUT"
+horizontal_alignment = 1

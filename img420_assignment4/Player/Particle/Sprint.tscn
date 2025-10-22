@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqy1r2nte231w"]
+
+[ext_resource type="Texture2D" uid="uid://clfdinpj4cds8" path="res://Player/Particle/Sprint.png" id="1_f20pv"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_88sy8"]
+particle_flag_disable_z = true
+gravity = Vector3(100, 0, 0)
+radial_accel_min = 57.47
+radial_accel_max = 100.0
+turbulence_enabled = true
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+z_as_relative = false
+texture = ExtResource("1_f20pv")
+lifetime = 0.72
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_88sy8")

@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://brnqs31h4wo4j"]
+
+[ext_resource type="Script" uid="uid://bw34nnn7nm2gk" path="res://Pickup/Scene/Pickup.cs" id="1_7q8xo"]
+[ext_resource type="Texture2D" uid="uid://cuthnmeq35fn7" path="res://icon.svg" id="1_wsflw"]
+[ext_resource type="PackedScene" uid="uid://cth8ft4kh8nbv" path="res://Pickup/Particle/Particle.tscn" id="2_eqcnw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7q8xo"]
+radius = 8.0
+
+[node name="Pickup" type="Area2D"]
+script = ExtResource("1_7q8xo")
+ParticlesScene = ExtResource("2_eqcnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7q8xo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_wsflw")
